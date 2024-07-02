@@ -1,0 +1,24 @@
+Peasant: The basic class, is able to surprisingly get in a few wins despite their simplicity
+        (P) Poke of GOD: Critical attacks can roll to crit again
+        (A) Stab: Pokes the enemy.
+                [Enhanced]: During [Panic] reduces delay by 100-300
+        (A) Consume!: Heals % missing HP, used at below 1/3 health.
+        (P) Panic!(9) 
+                Activates when below 1/3 health to grant [Panic]. 
+                Cannot be reduced to below 1 health while not on cooldown.
+                [Panic]: +STR +SPD + CRI -DEF - WIS. When applied -200 delay.
+Black Frost: A magic caster focused slowing down their opponent.
+        (P) Black Ice: All magic damage applies a stack of [Black Ice]
+                [Black Ice]: Reduces speed by 1
+        (A) Wind Chills: Attacks and delays the enemy by 50-250
+        (A) Armor of Ice(4): Gain a 20% heal shield that grants 30 DEF/WIS
+                Melee attacks with this shield up apply [Black Ice]
+        (A) Dark Hail(6): Attacks 6 times each attack causing 0-100 delay. 70 accuracy.
+Hemomancer: High health, low defense warrior mage hybrid. Deals more damage when low life.
+        (P) Misery and Company: Health loss is stored as blood
+        (A) Skewer: Expends blood to deal extra magic damage
+                [Enhanced]: While 1/2 health consume hp to deal missing hp damage.
+        (A) Blood Spray(4): Deal magic damage and inflect [Bleeding]
+                Can only be used while [Bleeding]
+        (P) Self Harm(5): Sacrifice 20% current health and inflict bleed on self to gain [Bleeding]
+                [Bleeding]: DOT based on attacker's ATT

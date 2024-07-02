@@ -1,0 +1,35 @@
+Unit 
+    Classes
+Skills 
+    PassiveSkills 
+    ActiveSkills 
+        Physical
+        Magical
+        Melee  
+        Ranged
+Status
+    Buffs
+    StatMod
+    Barriers
+    HealOverTime
+    Unique
+    Debuffs
+    DamageOverTime
+BattleStage
+    Unit   
+        Status
+        Skills
+    Unit   
+        Status
+        Skills
+
+Obects, methodFunction, TAG
+
+1. Initializes BattleStage, Units and Skills
+2. Stage advances both units until one is ready to act
+3. Unit selects a Skill object and passes itself and the other unit as an argument for the use() method
+4. Skill object creates Damage objects based on parameters of both players.
+    Status effects pass to the target is stored in the Damage object
+    All calculations are done on object creation
+    Positive effects for the user is passed directly using a method
+5. Skills pass a damage object to the defender

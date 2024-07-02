@@ -1,0 +1,65 @@
+Official release
+    Game system
+        Battle system ?
+        Status effects
+        Classes
+            Change stat map to be Enum, Integer
+    Bot intergrated
+    Data base intergrated
+
+    Unit > Skill > Damage > Unit All calculations and triggers are done at the creation of the Damage object
+        Physical attack as magic damage
+            Skill stores attacker stats as variables which
+            are used in calculations inside of Damage
+        On critical attack
+            
+        On receiving magical attack
+        Counter melee attacks
+        Steal stats
+
+Expand on game: 
+    1. Add status effects.
+    2. Add more classes.
+    3. Balance.
+Classes to add:
+    1. Black Ice Mage
+        Pushback and stun
+        Permanent speed down stacking
+    2. Gambler
+        RNG DD
+    3. Drug Addict 
+        Dependant on buffs
+        Starts with low delay and pops a high cooldown buff
+        Most combat power is tied to the buff
+    4. Streamer
+        RNG dependant buffs
+    5. Abyss Archer
+    6. Hemomancer
+        Uses HP as a resource to gain buffs and attacks. Can apply a dot to self to 
+        give attacks a burn effect. 
+    7. Succubussy
+        No front door
+        Stacks temptation which turns into seduced at 100 Stacks
+        Seduced enables high damage cooldowns and steals stats
+        Seduced turns into ????? and enables enhanced skills
+    8. Messenger of God
+        Holy berserker who hears God say "do a murder"
+    9. Fomorian Shaman
+    10. Daydream Mage
+    11. Healer?
+        Heals other player, overheal is stored as a debuff 
+    12. RPG MC
+            Spams potions, uses plot armor and friendship
+    13. Devil's Advocate
+            Counter style
+    14. Flower 
+    15. Draconic Legislator 
+    16. ?????
+            Starts with skills locked as passives
+            Abilities unlock with conditions
+    17. Fomorian Pirate
+    18. Mechanist 
+    19. Crazy cat lady
+    20. League player  
+            Forces opponent to play league and slowly stacks cancer
+    

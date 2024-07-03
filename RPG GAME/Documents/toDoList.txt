@@ -1,11 +1,7 @@
 Official release
-    Game system
-        Battle system ?
-        Status effects
-        Classes
-            Change stat map to be Enum, Integer
-    Bot intergrated
-    Data base intergrated
+    Get two real peasants fighting
+    Add one class
+    Add another
 
     Unit > Skill > Damage > Unit All calculations and triggers are done at the creation of the Damage object
         Physical attack as magic damage

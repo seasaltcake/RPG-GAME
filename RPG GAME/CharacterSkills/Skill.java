@@ -61,18 +61,18 @@ public abstract class Skill {
 
     }
     void rollEVABLKCRIT(Unit attacker, Unit defender, Damage dmg) {
-        int hitChance = accuracy-defender.calcStat("EVA");
+        int hitChance = accuracy-defender.calcStat(STAT.EVASION);
         if(rollForEVA(hitChance)) defender.applyEVA(dmg);
         else {
-            if(rollForCrit(attacker.calcStat("CRI"))) attacker.applyCrit(dmg);
-            if(rollForBLK(defender.calcStat("BLK"))) defender.applyBLK(dmg);
+            if(rollForCrit(attacker.calcStat(STAT.CRITICAL))) attacker.applyCrit(dmg);
+            if(rollForBLK(defender.calcStat(STAT.BLOCK))) defender.applyBLK(dmg);
         }
     }
     boolean rollForEVA(int chance) {
-        return rng.nextInt(100)+1 <= chance;
+        return rng.nextInt(100)+1 >= chance;
     }
     boolean rollForCrit(int chance) {
-        return rng.nextInt(100)+1 >= chance;
+        return rng.nextInt(100)+1 <= chance;
     }
     boolean rollForBLK(int chance) {
         return rng.nextInt(100)+1 <= chance;

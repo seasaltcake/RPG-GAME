@@ -18,7 +18,7 @@ Hemomancer: High health, low defense warrior mage hybrid. Deals more damage when
         (P) Misery and Company: Health loss is stored as blood
         (A) Skewer: Expends blood to deal extra magic damage
                 [Enhanced]: While 1/2 health consume hp to deal missing hp damage.
-        (A) Blood Spray(4): Deal magic damage and inflect [Bleeding]
+        (A) Blood Spray(4): Deal magic damage and inflict [Bleeding]
                 Can only be used while [Bleeding]
         (P) Self Harm(5): Sacrifice 20% current health and inflict bleed on self to gain [Bleeding]
                 [Bleeding]: DOT based on attacker's ATT

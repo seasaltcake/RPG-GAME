@@ -22,7 +22,7 @@ public class EatFood extends ActiveSkill {
     };
 
     public void use(Unit attacker, Unit defender, BattleStage stage) {
-        int multi = ((attacker.getStat("mHP"))*(rng.nextInt(11)+40))/100;
+        int multi = ((attacker.getStat(STAT.HEALTH))*(rng.nextInt(11)+40))/100;
         attacker.heal(multi);
         stage.battleLog = attacker.name+getRandomString(foodLines)+" and heals for "+multi
                  +" while "+defender.name+getRandomString(defenderReaction);
@@ -30,7 +30,7 @@ public class EatFood extends ActiveSkill {
         attacker.delay(delay);
     }
     public boolean isReady(Unit user, Unit defender) {
-        boolean underHalfHealth = user.health < user.getStat("mHP")/2;
+        boolean underHalfHealth = user.health < user.getStat(STAT.HEALTH)/2;
         boolean onCD = onCooldown();
         return  underHalfHealth && !onCD;
     }

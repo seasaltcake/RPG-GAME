@@ -27,8 +27,8 @@ public class Damage {
         return damage*ran/100;
     }
     int applyCrit(Unit attacker, int damage) {
-        if(rng.nextInt(100)+1 <= attacker.calcStat("CRI")) {
-            return damage*attacker.calcStat("CDM")/100;
+        if(rng.nextInt(100)+1 <= attacker.calcStat(STAT.CRITICAL)) {
+            return damage*attacker.calcStat(STAT.CRITDAMAGE)/100;
         }
         return damage;
     }

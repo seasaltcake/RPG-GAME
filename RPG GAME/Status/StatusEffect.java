@@ -1,18 +1,14 @@
 package Status;
 import java.util.Arrays;
+import java.util.HashMap;
+
+import Character.STAT;
 
 public abstract class StatusEffect {
 
-    enum TAG {
-        BUFF,
-        DEBUFF, 
-        STATMOD,
-        BARRIER,
-        UNIQUE,
-        DAMAGEOVERTIME,
-        HEALOVERTIME 
-    }
+
     TAG tags[];
+    HashMap<STAT, Integer> statSheet = new HashMap<STAT, Integer>();
 
     String desciption = "";
     int rank = 0;
@@ -27,28 +23,10 @@ public abstract class StatusEffect {
     public StatusEffect() {
 
     }
-    public boolean isBuff() {
-        return Arrays.asList(tags).contains(TAG.BUFF);
+    public boolean is(TAG tag) {
+        return Arrays.asList(tags).contains(tag);
     }
-    public boolean isDebuff() {
-        return Arrays.asList(tags).contains(TAG.DEBUFF);
+    public int getStatMod(STAT stat) {
+        return statSheet.get(stat);
     }
-    public boolean isStatMod() {
-        return Arrays.asList(tags).contains(TAG.STATMOD);
-    }
-    public boolean isDOT() {
-        return Arrays.asList(tags).contains(TAG.DAMAGEOVERTIME);
-    }
-    public boolean isHOT() {
-        return Arrays.asList(tags).contains(TAG.HEALOVERTIME);
-    }    
-    public boolean isBarrier() {
-        return Arrays.asList(tags).contains(TAG.BARRIER);
-    }
-    public boolean isUnique() {
-        for(TAG curr: tags) {
-            if(curr == TAG.UNIQUE) return true;
-        }
-        return false;
-    }  
 }
